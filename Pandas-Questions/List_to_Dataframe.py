@@ -7,14 +7,9 @@ import pandas as pd
 
 def createDataframe(student_data:  list[list[int]]) -> pd.DataFrame:
    
-    # Printing the 2D student data list
-    print(student_data)
-
     # Converting the 2D list to a Pandas DataFrame
     df = pd.DataFrame(student_data, columns=['student_id', 'age'])
     
     return df
 
-student_df = createDataframe([[1, 15], [2, 11], [3, 11], [4, 20]])
-print(student_df)
     
