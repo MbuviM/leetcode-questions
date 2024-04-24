@@ -20,6 +20,6 @@ def dropDuplicateEmails(customers: pd.DataFrame) -> pd.DataFrame:
     remain and inplace ensures no copy of the dataset is created after the changes. 
     subset is the column of reference.
     """
-    drop_duplicates = customers.drop_duplicates(subset='email', keep='first', inplace=True)
+   customers.drop_duplicates(subset='email', keep='first', inplace=True)
 
     return customers
