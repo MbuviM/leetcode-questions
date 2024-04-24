@@ -16,3 +16,4 @@ def selectData(students: pd.DataFrame) -> pd.DataFrame:
 
     # Using loc to display the specific student
     selected_student = students.loc[students['student_id'] == 101, ['name', 'age']]
+return selected_student
